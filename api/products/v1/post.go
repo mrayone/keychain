@@ -26,5 +26,6 @@ func (h *ProductHTTPPostHandler) Handler(w http.ResponseWriter, r *http.Request)
 	p := Product{
 		Message: "teste",
 	}
+
 	api.RespondWithJSON(w, http.StatusCreated, p)
 }
