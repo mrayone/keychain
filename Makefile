@@ -5,5 +5,5 @@ install:
 test:
 	go test ./... -count=1
 
-start/api:
+dev/api:
 	$(_reflex_) -- go run main.go api
