@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	http "github.com/mrayone/golang-learn/protocol"
+	"github.com/mrayone/golang-learn/cmd/webserver"
 	"github.com/spf13/cobra"
 )
 
@@ -18,9 +18,9 @@ func init() {
 	rootCmd.AddCommand(apiCommand)
 }
 
-func apiExecute(cmd *cobra.Command, args []string) error {
+func apiExecute(_ *cobra.Command, _ []string) error {
 
-	http.Serve()
+	webserver.Serve()
 
 	return nil
 }
