@@ -3,7 +3,7 @@ package configs
 import "os"
 
 var config = map[string]string{
-	"APP_NAME":  "Golearn",
+	"APP_NAME":  "keychain",
 	"HTTP_PORT": "9000",
 
 	//db configs

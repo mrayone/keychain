@@ -1,6 +1,6 @@
 package main
 
-import "github.com/mrayone/golang-learn/cmd"
+import "github.com/mrayone/keychain/cmd"
 
 func main() {
 	cmd.Execute()

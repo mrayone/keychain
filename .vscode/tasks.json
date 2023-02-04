@@ -6,7 +6,7 @@
     {
       "label": "Escape Analysis",
       "type": "shell",
-      "command": "go build -gcflags '-m -l' $(dirname github.com/mrayone/golang-learn/${relativeFile})",
+      "command": "go build -gcflags '-m -l' $(dirname github.com/mrayone/keychain/${relativeFile})",
       "problemMatcher": {
         "pattern": {
           "regexp": "^([^/].*):(\\d+):(\\d+): (.*)$",
