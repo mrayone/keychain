@@ -20,7 +20,5 @@ func init() {
 
 func apiExecute(_ *cobra.Command, _ []string) error {
 
-	webserver.Serve()
-
-	return nil
+	return webserver.Serve()
 }

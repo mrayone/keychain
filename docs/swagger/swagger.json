@@ -1,0 +1,24 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {}
+    },
+    "paths": {
+        "/v1/configuration": {
+            "post": {
+                "description": "This endpoint perform to create a configration bundle based on redis key",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    ""
+                ],
+                "summary": "Handles configuration keys",
+                "responses": {}
+            }
+        }
+    }
+}

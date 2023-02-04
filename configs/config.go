@@ -1,10 +1,18 @@
 package configs
 
-import "os"
+import (
+	"os"
+	"strconv"
+	"time"
+)
 
 var config = map[string]string{
-	"APP_NAME":  "keychain",
-	"HTTP_PORT": "9000",
+	"APP_NAME": "keychain",
+
+	// http server
+	"HTTP_PORT":                        "9000",
+	"HTTP_SERVER_READ_TIMEOUT_MILLIS":  "60000",
+	"HTTP_SERVER_WRITE_TIMEOUT_MILLIS": "60000",
 
 	//db configs
 	"APP_DB_USERNAME": "postgres",
@@ -19,4 +27,20 @@ func GetString(k string) string {
 	}
 
 	return v
+}
+
+// GetInt value of a given env var
+func GetInt(k string) int {
+	v := GetString(k)
+	i, err := strconv.Atoi(v)
+	if err != nil {
+		panic(err)
+	}
+
+	return i
+}
+
+// GetDuration value of a given env var
+func GetDuration(k string) time.Duration {
+	return time.Duration(GetInt(k)) * time.Millisecond
 }

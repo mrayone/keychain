@@ -1,0 +1,16 @@
+info:
+  contact: {}
+paths:
+  /v1/configuration:
+    post:
+      consumes:
+      - application/json
+      description: This endpoint perform to create a configration bundle based on
+        redis key
+      produces:
+      - application/json
+      responses: {}
+      summary: Handles configuration keys
+      tags:
+      - ""
+swagger: "2.0"
