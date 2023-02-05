@@ -17,3 +17,6 @@ dev/api:
 
 swagger:
 	swag init -generalInfo cmd/webserver/http.go -output ./docs/swagger
+
+install-hooks:
+	./scripts/init-git.sh
