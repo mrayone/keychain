@@ -9,6 +9,9 @@ install-tools:
 test:
 	go test ./... -count=1
 
+lint:
+	gocritic check ./...
+
 dev/api:
 	$(_reflex_) -- go run main.go api
 

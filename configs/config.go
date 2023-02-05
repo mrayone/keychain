@@ -14,7 +14,7 @@ var config = map[string]string{
 	"HTTP_SERVER_READ_TIMEOUT_MILLIS":  "60000",
 	"HTTP_SERVER_WRITE_TIMEOUT_MILLIS": "60000",
 
-	//db configs
+	// db configs
 	"APP_DB_USERNAME": "postgres",
 	"APP_DB_PASSWORD": "postgres",
 	"APP_DB_NAME":     "sales",
