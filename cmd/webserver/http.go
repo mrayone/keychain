@@ -18,7 +18,7 @@ func Serve() error {
 	})
 
 	// health
-	app.Get("/", func(c *fiber.Ctx) error {
+	app.Get("/health", func(c *fiber.Ctx) error {
 
 		return c.JSON(struct {
 			Status string `json:"status"`
