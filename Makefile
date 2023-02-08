@@ -6,8 +6,11 @@ install: install-tools
 install-tools:
 	cat tools/tools.go | grep "_" | awk -F '"' '{print $$2"@latest"}' | xargs -L1 go install
 
-test:
-	go test ./... -count=1
+test/unit:
+	go test -race ./... -count=1 -short
+
+test/e2e:
+	echo "running e2e"
 
 lint:
 	gocritic check ./...

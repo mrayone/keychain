@@ -1,4 +1,6 @@
 
 #!/bin/sh
+set -e
 
-make test
+make test/unit
+make test/e2e
